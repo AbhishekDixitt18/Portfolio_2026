@@ -31,6 +31,9 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             intro.style.display = "none";
             site.style.display = "block";
+            requestAnimationFrame(() => {
+                site.classList.add("site-ready");
+            });
             initScrollAnimations(); 
         }, 1200);
     }, 3800);
@@ -103,3 +106,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+
+
