@@ -107,5 +107,67 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// ===============================
+// CONTACT FORM HANDLER
+// ===============================
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+
+        const nameInput = contactForm.querySelector('[name="user_name"]');
+        const emailInput = contactForm.querySelector('[name="user_email"]');
+        const messageInput = contactForm.querySelector('[name="message"]');
+
+        const name = nameInput ? nameInput.value.trim() : '';
+        const email = emailInput ? emailInput.value.trim() : '';
+        const message = messageInput ? messageInput.value.trim() : '';
+
+        if (!name || !email || !message) return;
+
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        }
+
+        let statusBox = document.getElementById("form-status");
+        if (!statusBox) {
+            statusBox = document.createElement("div");
+            statusBox.id = "form-status";
+            contactForm.appendChild(statusBox);
+        }
+
+        setTimeout(() => {
+            if (submitBtn) {
+                submitBtn.style.background = 'linear-gradient(135deg, #059669, #047857)';
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+            }
+
+            statusBox.className = "form-status-success";
+            statusBox.innerHTML = `<i class="fas fa-check-circle"></i> Thank you, <strong>${name}</strong>! Your message has been sent successfully.`;
+            statusBox.style.display = "block";
+
+            const mailtoUri = `mailto:sharmaabhidixit@gmail.com?subject=Portfolio%20Contact%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom:%20${encodeURIComponent(name)}%20(${encodeURIComponent(email)})`;
+            window.location.href = mailtoUri;
+
+            setTimeout(() => {
+                contactForm.reset();
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                    submitBtn.innerHTML = originalBtnText;
+                }
+
+                setTimeout(() => {
+                    if (statusBox) statusBox.style.display = "none";
+                }, 4000);
+            }, 2500);
+        }, 600);
+    });
+}
+
 
 

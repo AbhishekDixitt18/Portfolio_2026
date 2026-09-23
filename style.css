@@ -31,7 +31,7 @@ body {
 
 .card {
     background: rgba(255,255,255,0.05);
-    border-radius: 26px;
+    border-radius: 8px;
     padding: 42px;
     backdrop-filter: blur(28px);
     box-shadow: 0 0 90px rgba(31, 78, 121, 0.24);
@@ -47,7 +47,7 @@ body {
 .top-tags span {
     font-size: 11px;
     padding: 6px 14px;
-    border-radius: 20px;
+    border-radius: 6px;
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.15);
     letter-spacing: 1px;
@@ -98,7 +98,7 @@ body {
 .btn {
     font-size: 12px;
     padding: 8px 16px;
-    border-radius: 22px;
+    border-radius: 6px;
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.15);
     display: flex;
@@ -125,7 +125,7 @@ body {
     align-items: center;
     gap: 8px;
     padding: 8px 16px;
-    border-radius: 30px;
+    border-radius: 6px;
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.15);
     color: #1f4e79;
@@ -135,7 +135,7 @@ body {
 .right {
     flex: 1;
     background: linear-gradient(180deg, rgba(239, 235, 227, 0.95), rgba(247, 244, 238, 0.98));
-    border-radius: 22px;
+    border-radius: 8px;
     padding: 28px;
     box-shadow: inset 0 0 40px rgba(31, 78, 121, 0.08);
     position: relative;
@@ -216,7 +216,7 @@ body {
     flex: 1;
     padding: 14px;
     background: rgba(255,255,255,0.04);
-    border-radius: 14px;
+    border-radius: 6px;
     text-align: left;
 }
 
@@ -469,7 +469,7 @@ header {
   display: flex;
   gap: 3rem;
   padding: 12px 28px;
-  border-radius: 30px;
+  border-radius: 8px;
 
     /* GRADIENT GLASS */
         background: linear-gradient(90deg, rgba(244, 239, 230, 0.96), rgba(233, 225, 210, 0.96), rgba(244, 239, 230, 0.96));
@@ -484,7 +484,7 @@ header {
   display: flex;
   align-items: center;
   gap: 6px;
-  border-radius: 25px;
+  border-radius: 6px;
   padding: 8px 14px;
   transition: 0.3s ease;
 }
@@ -566,7 +566,7 @@ header {
     background: rgba(31, 78, 121, 0.12);
     color: #1f4e79;
   display: inline-block;
-  border-radius: 25px;
+  border-radius: 6px;
   padding: 6px 14px;
   margin-bottom: 30px;
   font-size: 14px;
@@ -624,7 +624,7 @@ header {
     background: linear-gradient(135deg, #1f4e79, #163a5a);
   color: #fff;
   border: none;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 12px 18px;
     text-decoration: none;
     display: inline-flex;
@@ -643,7 +643,7 @@ header {
 .btn-home2 {
   background: transparent;
     border: 2px solid #1f4e79;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 12px 18px;
     color: #1f4e79;
     text-decoration: none;
@@ -776,7 +776,7 @@ hr {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(31, 78, 121, 0.25);
     padding: 22px;
-    border-radius: 18px;
+    border-radius: 8px;
     backdrop-filter: blur(12px);
     box-shadow: 0 0 25px rgba(31, 78, 121, 0.15);
     transition: 0.35s ease;
@@ -784,14 +784,14 @@ hr {
 
 /* HOVER EFFECT */
 .project-card:hover {
-    transform: translateY(-8px) scale(1.02);
+    transform: translateY(-8px) scale(1.015);
     box-shadow: 0 0 35px rgba(31, 78, 121, 0.45);
 }
 
 /* IMAGE */
 .project-card img {
     width: 100%;
-    border-radius: 14px;
+    border-radius: 6px;
     margin-bottom: 15px;
     border: 1px solid rgba(31, 78, 121, 0.25);
 }
@@ -815,7 +815,7 @@ hr {
     margin: 4px 6px 0 0;
     padding: 6px 12px;
     font-size: 11px;
-    border-radius: 20px;
+    border-radius: 4px;
     color: #1f4e79;
     border: 1px solid rgba(31, 78, 121, 0.3);
     background: rgba(31, 78, 121, 0.12);
@@ -830,7 +830,7 @@ hr {
 
 .project-card .btn {
     padding: 8px 14px;
-    border-radius: 20px;
+    border-radius: 6px;
     font-size: 13px;
     color: #fff;
     background: linear-gradient(135deg, #1f4e79, #163a5a);
@@ -913,7 +913,7 @@ hr {
     display: inline-block;
     padding: 12px;
     background: rgba(255, 255, 255, 0.04);
-    border-radius: 16px;
+    border-radius: 8px;
     backdrop-filter: blur(12px);
     border: 1px solid rgba(31, 78, 121, 0.25);
     box-shadow: 0 0 25px rgba(31, 78, 121, 0.25);
@@ -922,7 +922,7 @@ hr {
 /* PHOTO */
 .photo-container img {
     width: 260px;
-    border-radius: 12px;
+    border-radius: 6px;
     display: block;
 }
 
@@ -999,7 +999,7 @@ hr {
 .service-card {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(31, 78, 121, 0.25);
-    border-radius: 22px;
+    border-radius: 8px;
     padding: 2.5rem;
     text-align: center;
     backdrop-filter: blur(14px);
@@ -1019,7 +1019,7 @@ hr {
 .cert-preview {
     width: 100%;
     height: 190px;
-    border-radius: 14px;
+    border-radius: 6px;
     margin-bottom: 1.2rem;
     object-fit: cover;
     border: 1px solid rgba(31, 78, 121, 0.28);
@@ -1103,7 +1103,7 @@ hr {
     background: rgba(31, 78, 121, 0.12);
     color: #1f4e79;
     padding: 0.35rem 0.9rem;
-    border-radius: 20px;
+    border-radius: 4px;
     font-size: 0.85rem;
     border: 1px solid rgba(31, 78, 121, 0.3);
 }
@@ -1227,7 +1227,7 @@ hr {
 .contact-form {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(31, 78, 121, 0.25);
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 35px;
   backdrop-filter: blur(12px);
   box-shadow: 0 0 30px rgba(31, 78, 121, 0.25);
@@ -1244,7 +1244,7 @@ hr {
   padding: 15px;
   background: rgba(255, 255, 255, 0.86);
   border: 1px solid rgba(31, 78, 121, 0.3);
-  border-radius: 10px;
+  border-radius: 6px;
   color: #2b2520;
   transition: 0.3s;
 }
@@ -1253,6 +1253,23 @@ hr {
 .form-group textarea::placeholder {
     color: #2b2520;
     opacity: 1;
+}
+
+.form-status-success {
+    margin-top: 15px;
+    padding: 12px 16px;
+    background: rgba(5, 150, 105, 0.12);
+    border: 1px solid rgba(5, 150, 105, 0.38);
+    border-radius: 6px;
+    color: #047857;
+    font-size: 0.92rem;
+    display: none;
+    line-height: 1.5;
+}
+
+.form-status-success i {
+    margin-right: 6px;
+    color: #059669;
 }
 
 .form-group input:focus,
@@ -1783,7 +1800,7 @@ hr {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 999px;
+    border-radius: 6px;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -1800,7 +1817,7 @@ hr {
 
 /* Certificate cards readability upgrade */
 #certification .cert-card,
-#training .cert-card {
+#internship .cert-card {
     background: rgba(255, 255, 255, 0.98);
     border: 1px solid rgba(29, 78, 216, 0.3);
     box-shadow: 0 16px 32px rgba(30, 58, 138, 0.16);
@@ -1808,13 +1825,13 @@ hr {
 }
 
 #certification .cert-card:hover,
-#training .cert-card:hover {
+#internship .cert-card:hover {
     transform: translateY(-8px) scale(1.015);
     box-shadow: 0 20px 36px rgba(30, 58, 138, 0.24);
 }
 
 #certification .cert-preview,
-#training .cert-preview {
+#internship .cert-preview {
     height: 225px;
     object-fit: contain;
     background: #ffffff;
@@ -1825,7 +1842,7 @@ hr {
 }
 
 #certification .cert-card h3,
-#training .cert-card h3 {
+#internship .cert-card h3 {
     font-size: clamp(1.9rem, 2.2vw, 2.9rem);
     line-height: 1.16;
     margin-bottom: 0.8rem;
@@ -1833,7 +1850,7 @@ hr {
 }
 
 #certification .cert-card p,
-#training .cert-card p {
+#internship .cert-card p {
     font-size: 1.08rem;
     line-height: 1.75;
     color: #1f2937;
@@ -1841,7 +1858,7 @@ hr {
 }
 
 #certification .cert-card .service-features span,
-#training .cert-card .service-features span {
+#internship .cert-card .service-features span {
     font-size: 0.96rem;
     font-weight: 600;
     color: #1e3a8a;
@@ -1849,21 +1866,21 @@ hr {
     border: 1px solid rgba(29, 78, 216, 0.36);
 }
 
-#training .cert-card .service-icon {
+#internship .cert-card .service-icon {
     display: none;
 }
 
-#training .services-grid {
+#internship .services-grid {
     grid-template-columns: minmax(0, 980px);
     justify-content: center;
 }
 
-#training .cert-card {
+#internship .cert-card {
     max-width: 980px;
     margin: 0 auto;
 }
 
-#training .cert-preview {
+#internship .cert-preview {
     width: min(100%, 760px);
     margin-left: auto;
     margin-right: auto;
@@ -1871,26 +1888,26 @@ hr {
 
 @media (max-width: 900px) {
     #certification .cert-preview,
-    #training .cert-preview {
+    #internship .cert-preview {
         height: 190px;
         padding: 8px;
     }
 
-    #training .services-grid {
+    #internship .services-grid {
         grid-template-columns: 1fr;
     }
 
-    #training .cert-card {
+    #internship .cert-card {
         max-width: none;
     }
 
     #certification .cert-card h3,
-    #training .cert-card h3 {
+    #internship .cert-card h3 {
         font-size: 1.95rem;
     }
 
     #certification .cert-card p,
-    #training .cert-card p {
+    #internship .cert-card p {
         font-size: 1rem;
     }
 }
@@ -2041,6 +2058,96 @@ hr {
     .skills-float {
         display: none;
     }
+}
+
+/* ===================================================
+   MODERN CORNER HOVER EFFECTS FOR CARDS
+   =================================================== */
+
+.project-card,
+.service-card,
+.cert-card,
+.card,
+.contact-form,
+.right {
+    position: relative;
+    border-radius: 8px !important;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+/* Top-Left Corner Bracket */
+.project-card::before,
+.service-card::before,
+.cert-card::before,
+.card::before,
+.contact-form::before,
+.right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 3px solid #1e3a8a;
+    border-left: 3px solid #1e3a8a;
+    border-top-left-radius: 8px;
+    opacity: 0;
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Bottom-Right Corner Bracket */
+.project-card::after,
+.service-card::after,
+.cert-card::after,
+.card::after,
+.contact-form::after,
+.right::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid #1e3a8a;
+    border-right: 3px solid #1e3a8a;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/* Corner Hover Activation */
+.project-card:hover::before,
+.service-card:hover::before,
+.cert-card:hover::before,
+.card:hover::before,
+.contact-form:hover::before,
+.right:hover::before,
+.project-card:hover::after,
+.service-card:hover::after,
+.cert-card:hover::after,
+.card:hover::after,
+.contact-form:hover::after,
+.right:hover::after {
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+}
+
+/* Corner highlight and subtle glow border transition on hover */
+.project-card:hover,
+.service-card:hover,
+.cert-card:hover,
+.card:hover,
+.contact-form:hover {
+    border-color: rgba(30, 58, 138, 0.45) !important;
+    box-shadow: 0 14px 32px rgba(30, 58, 138, 0.18), 0 0 18px rgba(30, 58, 138, 0.12) !important;
+    background-image: 
+        radial-gradient(circle at top left, rgba(30, 58, 138, 0.08), transparent 80px),
+        radial-gradient(circle at bottom right, rgba(30, 58, 138, 0.08), transparent 80px) !important;
 }
 
 
